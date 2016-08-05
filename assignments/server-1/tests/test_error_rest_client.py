@@ -53,7 +53,7 @@ def test_cookie_client_post_invalid_size_data_returns_422(request_post):
     assert response.status_code == 422
 
 
-def _post_cookie(requet_post):
+def _post_cookie(request_post):
     data = {'flavor': 'zombie', 'size': 20}
     response = request_post('/cookie/', data=data)
 
