@@ -12,7 +12,7 @@ api = Api(app)
 api.add_resource(BaseApi, BaseApi.endpoint)
 
 for api_class in api_list:
-    api.add_resource(api_class, api_class.endpoint)
+	api.add_resource(api_class, api_class.endpoint)
 
 
 def mmap_reset():
